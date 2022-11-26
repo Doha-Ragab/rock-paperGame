@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/fontawesome-free-5.15.3-web/css/all.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,800&display=swap" rel="stylesheet">
+  <link href="css/style.css" rel="stylesheet">
+  
+  <title> Rock Paper Scissors Game</title>
+
+<body>
+<div class="container">
+  <header class="d-flex justify-content-between p-3 col-12">
+    <h1 class="d-flex flex-column">
+      <span>ROCK</span>
+      <span>PAPER</span>
+      <span>SCISSORS</span>
+    </h1>
+    <div class="con-score text-center">
+      <h4>score</h4>
+      <p id="score">0</p>
+    </div>
+  </header>
+  <main id="main">
+    <button class="btn-cir btn-paper pick" data-choices="paper"><span class="wrapper"><img src="./images/icon-paper.svg" alt="paper"></span></button>
+    <button class="btn-cir btn-scissors  pick" data-choices="scissors"><span class="wrapper"><img src="./images/icon-scissors.svg" alt="scissors"></span></button>
+    <button class="btn-cir btn-rock  pick" data-choices="rock"><span class="wrapper"><img src="./images/icon-rock.svg" alt="rock"></span></button>
+  </main>
+
+  <section  id="section" class="col-12 col-md-11">
+    <div class="d-flex flex-column justify-content-center align-items-center">
+      <h2>You picked</h2>
+      <button class="btn-cir btn-paper" id="user_select"><span class="wrapper"><img src="./images/icon-paper.svg" alt="paper"></span></button>
+    </div>
+    <div class="d-flex flex-column justify-content-center align-items-center go-down">
+      <p class="fs-1">You <span id="result">Win </span></p>
+      <button class="btn" id="btn-playAgin">Play Agin </button>
+    </div>
+    <div class="d-flex flex-column justify-content-center align-items-center">
+      <h2>The house picked</h2>
+      <button class="btn-cir btn-paper" id="computer_select"><span class="wrapper"><img src="./images/icon-paper.svg" alt="paper"></span></button>
+    </div>
+  </section>
+  <div class="rule-container ">
+    <div class="rule-model ">
+      <img src="./images/image-rules.svg" alt="Rules">
+      <button class="btnclose"> <img src="./images/icon-close.svg" alt="close"></button>
+  
+    </div>  
+    </div>
+
+  <button id="btnRules" class="btn">RULES</button>
+</div>
+
+
+</body>
+<script src="js/bootstrap.bundle.min.js"></script>
+<script src="js/jquery-3.4.1.min.js"></script>
+<script src="js/script.js"></script>
+</html>
